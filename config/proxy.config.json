@@ -1,0 +1,22 @@
+{
+  "cookieSecret": "replace-this-secret",
+  "authorisedList": [],
+  "api": {
+    "gitleaks": {
+      "enabled": true,
+      "ignoreGitleaksAllow": true,
+      "noColor": true
+    }
+  },
+  "sink": [
+    {
+      "type": "fs",
+      "enabled": false
+    },
+    {
+      "type": "mongo",
+      "connectionString": "mongodb://localhost:27017/gitproxy",
+      "enabled": false
+    }
+  ]
+}

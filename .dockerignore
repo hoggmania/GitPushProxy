@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log*
+.git
+.tmp-git-proxy
+src
+package.json
+package-lock.json

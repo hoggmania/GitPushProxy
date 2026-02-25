@@ -1,0 +1,11 @@
+services:
+  gitpushproxy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      CONFIG_FILE: /opt/git-proxy/proxy.config.json
+      GIT_PROXY_SERVER_PORT: 8000
+      GIT_PROXY_HTTPS_SERVER_PORT: 8443
